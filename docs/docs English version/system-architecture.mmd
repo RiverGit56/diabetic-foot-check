@@ -1,0 +1,29 @@
+%% System architecture — Diabetic Foot Check Assistant (FootCheck)
+%% Render: mmdc -i "docs/docs English version/system-architecture.mmd" -o "docs/docs English version/system-architecture.svg"
+%% The CloudBase block is a PRODUCTION-PHASE DESIGN and is NOT ENABLED in the demo.
+flowchart TB
+    USER["User (browser)"]
+
+    subgraph WEB["Frontend Web — Next.js 14 static export · runs 100% in the browser"]
+        UI["UI pages<br/>Home · Assess · Recommendations · Followup · Profile · Data"]
+        I18N["i18n module (i18next)<br/>en · zh-CN · ms · ta · fil — bundled at build time<br/>missing key → runtime fallback to English"]
+        TRIAGE["Deterministic triage engine<br/>triageEngine · assessment · clinicalRules<br/>EMERGENCY / PRIMARY_CARE / SELF_CARE / ABSTAIN"]
+        RULES[("Read-only medical rules library<br/>IWGDF 2023 · NICE NG19 / NG28<br/>IWGDF/IDSA 2023 · SIRS (ACCP/SCCM 1992) · Sepsis-3")]
+        LS[("Local storage (localStorage)<br/>profile · assessment history · daily check-in")]
+    end
+
+    DG["data.gov.sg — public, keyless HTTPS<br/>weather · PSI · MOH datasets"]
+
+    subgraph CB["CloudBase functions / database — PRODUCTION-PHASE DESIGN · NOT ENABLED"]
+        CF["Cloud functions<br/>(not deployed)"]
+        DB[("Cloud database<br/>(not created)")]
+    end
+
+    USER --> UI
+    UI --> I18N
+    UI --> TRIAGE
+    TRIAGE --> RULES
+    UI --> LS
+    UI -. "optional live lookup · graceful fallback" .-> DG
+    UI -. "cloudDb.ts optional mirror · disabled (cloudEnabled = false)" .-> CF
+    CF -.-> DB

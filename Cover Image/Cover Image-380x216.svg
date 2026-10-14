@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 216" width="380" height="216" role="img" aria-label="FootCheck cover — 16:9, 380x216">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E7C86"/>
+      <stop offset="0.55" stop-color="#0B4A5C"/>
+      <stop offset="1" stop-color="#0B2B3C"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7FAFC"/>
+      <stop offset="1" stop-color="#E2EDF2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="380" height="216" fill="url(#bg)"/>
+  <g opacity="0.10" stroke="#FFFFFF" stroke-width="0.5">
+    <path d="M0 54 H380 M0 108 H380 M0 162 H380 M76 0 V216 M152 0 V216 M228 0 V216 M304 0 V216"/>
+  </g>
+  <circle cx="330" cy="36" r="86" fill="#FFFFFF" opacity="0.04"/>
+  <circle cx="40" cy="196" r="70" fill="#000000" opacity="0.10"/>
+
+  <!-- ===== left: app logo (Lucide "footprints", ISC) — identical mark to web/src/components/Header.tsx ===== -->
+  <g transform="translate(16,44) scale(3.1)" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.96">
+    <path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/>
+    <path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/>
+    <path d="M16 17h4"/>
+    <path d="M4 13h4"/>
+  </g>
+
+  <!-- ===== centre-left column: wordmark → subtitle → tier bar → tagline → chips ===== -->
+  <text x="100" y="58" font-family="'Helvetica Neue',Arial,sans-serif" font-size="27.5" font-weight="700" fill="#FFFFFF" letter-spacing="0.2">FootCheck</text>
+  <text x="102" y="81" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="500" fill="#CFEAF0" letter-spacing="0.2">Diabetic Foot Check Assistant</text>
+
+  <!-- tri-colour care-tier bar -->
+  <g transform="translate(102,95)">
+    <rect x="0" y="0" width="43" height="9" rx="4.5" fill="#D64545"/>
+    <rect x="45" y="0" width="43" height="9" rx="4.5" fill="#E8A33D"/>
+    <rect x="90" y="0" width="43" height="9" rx="4.5" fill="#2E9E6B"/>
+  </g>
+
+  <!-- selected tagline -->
+  <g font-family="'Helvetica Neue',Arial,sans-serif" font-size="11.2" font-weight="500" fill="#EAF7F9">
+    <text x="102" y="127">Clear next-step foot screening</text>
+    <text x="102" y="144">for older adults with diabetes.</text>
+  </g>
+
+  <!-- ===== chips: one row, directly under the tagline (same pill style) ===== -->
+  <g font-family="'Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="600">
+    <rect x="102" y="159" width="112" height="18" rx="9" fill="#FFFFFF" opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="0.7"/>
+    <text x="158" y="171.5" fill="#EAF7F9" text-anchor="middle">Seniors &amp; Caregivers</text>
+    <rect x="220" y="159" width="62" height="18" rx="9" fill="#FFFFFF" opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="0.7"/>
+    <text x="251" y="171.5" fill="#EAF7F9" text-anchor="middle">5 Languages</text>
+  </g>
+
+  <!-- ===== far right: phone mockup (top-aligned with the wordmark) ===== -->
+  <g transform="translate(302,40)">
+    <rect x="0" y="0" width="64" height="136" rx="10" fill="#081E2A" stroke="#1C4E5E" stroke-width="1"/>
+    <rect x="3.5" y="3.5" width="57" height="129" rx="7.5" fill="url(#screen)"/>
+    <rect x="26" y="6.5" width="12" height="2.4" rx="1.2" fill="#9FB4BD"/>
+
+    <!-- care-tier banner -->
+    <rect x="8" y="16" width="48" height="20" rx="4" fill="#D64545"/>
+    <text x="32" y="25.5" font-family="'Helvetica Neue',Arial,sans-serif" font-size="6.4" font-weight="700" fill="#FFFFFF" text-anchor="middle">EMERGENCY</text>
+    <text x="32" y="32.4" font-family="'Helvetica Neue',Arial,sans-serif" font-size="4.4" fill="#FFE1E1" text-anchor="middle">Seek care now</text>
+
+    <!-- content lines -->
+    <g fill="#C3D6DD">
+      <rect x="8" y="42" width="34" height="3.4" rx="1.7"/>
+      <rect x="8" y="49" width="44" height="3.4" rx="1.7"/>
+      <rect x="8" y="56" width="40" height="3.4" rx="1.7"/>
+    </g>
+    <rect x="8" y="64" width="48" height="16" rx="4" fill="#EAF3F6" stroke="#CFE2E8" stroke-width="0.7"/>
+    <g fill="#8FAAB3">
+      <rect x="11" y="68.5" width="26" height="2.8" rx="1.4"/>
+      <rect x="11" y="73.5" width="34" height="2.8" rx="1.4"/>
+    </g>
+    <g fill="#B9CED6">
+      <rect x="8" y="85" width="42" height="3.2" rx="1.6"/>
+      <rect x="8" y="92" width="36" height="3.2" rx="1.6"/>
+      <rect x="8" y="99" width="44" height="3.2" rx="1.6"/>
+      <rect x="8" y="106" width="30" height="3.2" rx="1.6"/>
+    </g>
+    <rect x="8" y="116" width="48" height="11" rx="5.5" fill="#0E7C86"/>
+    <text x="32" y="123.4" font-family="'Helvetica Neue',Arial,sans-serif" font-size="5.2" font-weight="600" fill="#FFFFFF" text-anchor="middle">View advice</text>
+  </g>
+
+  <!-- footer -->
+  <text x="14" y="206" font-family="'Helvetica Neue',Arial,sans-serif" font-size="6.2" fill="#9FD2DA" opacity="0.85">Screening &amp; education tool — not a diagnostic device</text>
+</svg>

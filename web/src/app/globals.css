@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --max-content-width: 480px;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Accessibility: visible focus rings for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid #0d9488;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Tamil text: prevent truncation on mobile */
+html[lang="ta"] body {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.85;
+}
+html[lang="ta"] p,
+html[lang="ta"] span,
+html[lang="ta"] button,
+html[lang="ta"] label {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Filipino text: ensure no truncation on long words */
+html[lang="fil"] body {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Minimum touch target size for accessibility (44px WCAG 2.5.5) */
+button[class*="py-2"],
+a[class*="py-2"] {
+  min-height: 2.75rem;
+}
+
+/* Chat scrollbar */
+.chat-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 2px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes typing {
+  0%, 60%, 100% { opacity: 0.3; }
+  30% { opacity: 1; }
+}
+.typing-dot {
+  animation: typing 1.4s infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* Hide number input spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Ensure touch targets are large */
+button, a {
+  touch-action: manipulation;
+}
+
+/* Respect user's font size preferences */
+html {
+  font-size: 100%;
+}
