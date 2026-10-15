@@ -10,6 +10,14 @@
 
 ---
 
+## 🎬 Watch 30-Second Project Intro
+
+https://youtu.be/ztv1ns6s0TM
+
+Most diabetes-related amputations start with a wound that could have been caught earlier. FootCheck brings that check home.
+
+---
+
 ## 🌐 WEB APP - Try it
 
 **<https://b67d3face37d47fd8db26026af6e1931.sg.agentos-app.run>**
