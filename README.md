@@ -12,7 +12,7 @@
 
 ## 🎬 Watch 30-Second Project Intro
 
-**https://youtu.be/ztv1ns6s0TM**    (Please change the quality to 720p)
+**https://youtu.be/ztv1ns6s0TM**&nbsp;&nbsp;    (Please change the quality to 720p)
 
 Most diabetes-related amputations start with a wound that could have been caught earlier. FootCheck brings that check home.
 
