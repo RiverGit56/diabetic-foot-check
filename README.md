@@ -1,6 +1,5 @@
 # FootCheck — Diabetic Foot Check Assistant
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中文版见 **[README.zh-CN.md](README.zh-CN.md)**。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project name: FootCheck — Diabetic Foot Check Assistant  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Short blurb: Clear next-step foot screening for older adults with diabetes.
