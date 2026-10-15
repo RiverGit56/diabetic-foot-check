@@ -1,23 +1,24 @@
 # FootCheck — Diabetic Foot Check Assistant
 
-> 中文版见 **[README.zh-CN.md](README.zh-CN.md)**。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中文版见 **[README.zh-CN.md](README.zh-CN.md)**。
 
-> **Project name:** FootCheck — Diabetic Foot Check Assistant  
-> **Short blurb:** Clear next-step foot screening for older adults with diabetes.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project name: FootCheck — Diabetic Foot Check Assistant  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Short blurb: Clear next-step foot screening for older adults with diabetes.
 
-> A **screening and health-education** tool for Singapore adults aged **60+ with diagnosed type 1 or type 2 diabetes**, built for **seniors and their caregivers**, and available in **5 languages**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢 A foot screening and health-education tool for Singapore adults <ins>**aged 60+ with diagnosed type 1 or type 2 diabetes**</ins>, built for <ins>**seniors**</ins> and their <ins>**caregivers**</ins>, and <ins>**available in 5 languages**</ins>.
 
-> ⚠️ **This is a screening and education tool, NOT a diagnostic device.** It does **not** give medication advice and does **not** replace professional medical care. If you feel unwell, seek medical attention.
+> ⚠️ This is a screening and education tool, NOT a diagnostic device. It does not give medication advice and does not replace professional medical care. If you feel unwell, seek medical attention.
 
 ---
 
-## 🌐 WEB APP - Try it
+## 🌐 Live demo
 
 **<https://b67d3face37d47fd8db26026af6e1931.sg.agentos-app.run>**
 
-No sign-up, no login — just open it.
+WEB APP: No sign-up, no install — just open it.  
+For seniors and caregivers. 5 Languages.
 
-![FootCheck — Diabetic Foot Check Assistant](Cover%20Image/Cover%20Image-380x216@3x.png)
+<img src="Cover%20Image/Cover%20Image-380x216@3x.png" alt="FootCheck — Diabetic Foot Check Assistant" width="428">
 
 ---
 
@@ -30,29 +31,24 @@ FootCheck helps older adults with diabetes perform a structured **self-check of 
 - **IWGDF category (0–3)** — drives the recommended **screening / review interval** (12 / 6 / 3 / 1 months).
 - **Advice and education** — care-navigation guidance plus foot self-care tips, tailored to the result.
 
-Judgements are made by a **deterministic rule engine** (auditable and reproducible); **no LLM takes part in the decision**. See [`docs/docs English version/design-tradeoffs.md`](docs/docs%20English%20version/design-tradeoffs.md).
-
 **Tech stack:** Next.js 14 (App Router, static export) · React 18 · TypeScript · Tailwind CSS · i18next.
 
 ---
 
 ## Architecture & documentation
 
-| Document                                                                                                                                                                                                  | Contents                                                                                                                        |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [`docs/docs English version/system-architecture.md`](docs/docs%20English%20version/system-architecture.md) · [中文](docs/中文说明/system-architecture-zh.md)                                                    | System architecture diagram (Mermaid + SVG/PNG)                                                                                 |
-| [`docs/docs English version/trust-boundary.md`](docs/docs%20English%20version/trust-boundary.md) · [中文](docs/中文说明/trust-boundary-zh.md)                                                                   | Trust-boundary diagram (Mermaid + SVG/PNG)                                                                                      |
-| [`docs/docs English version/design-tradeoffs.md`](docs/docs%20English%20version/design-tradeoffs.md) · [中文](docs/中文说明/design-tradeoffs-zh.md)                                                             | Key design trade-offs and known limitations                                                                                     |
-| [`docs/docs English version/assessment-criteria-source-mapping-en.md`](docs/docs%20English%20version/assessment-criteria-source-mapping-en.md) · [中文](docs/中文说明/assessment-criteria-source-mapping-zh.md) | **Result ↔ criterion ↔ source mapping** — the key competition document                                                          |
-| [`docs/docs English version/data-sources-and-grading-en.md`](docs/docs%20English%20version/data-sources-and-grading-en.md) · [中文](docs/中文说明/data-sources-and-grading-zh.md)                               | Data-source registry and grading criteria                                                                                       |
-| [`docs/docs English version/question-bank-and-selection-logic-en.md`](docs/docs%20English%20version/question-bank-and-selection-logic-en.md) · [中文](docs/中文说明/question-bank-and-selection-logic-zh.md)    | Question bank (41 questions) and per-session selection logic                                                                    |
-| [`docs/docs English version/technical-approach-en.md`](docs/docs%20English%20version/technical-approach-en.md) · [中文](docs/中文说明/technical-approach-zh.md)                                                 | Technical approach and target population                                                                                        |
-| [`docs/miscellaneous/competition-submission-en.md`](docs/miscellaneous/competition-submission-en.md) · [中文](docs/miscellaneous/competition-submission-zh.md)                                              | Competition submission materials (name candidates, blurb, project description, dev-process statement, demo script, cover image) |
-| [`README.zh-CN.md`](README.zh-CN.md)                                                                                                                                                                      | This README in Chinese                                                                                                          |
-| [`docs/中文说明/cloudbase-integration.md`](docs/中文说明/cloudbase-integration.md)                                                                                                                                | CloudBase (production-phase design, not enabled)                                                                                |
-| [`VERSIONS.md`](VERSIONS.md)                                                                                                                                                                              | Version history (Chinese)                                                                                                       |
-| [`Proof of Workbuddy usage/`](Proof%20of%20Workbuddy%20usage/)                                                                                                                                            | Proof-of-usage screenshots (WorkBuddy AI conversation evidence)                                                                 |
-| [`Cover Image/`](Cover%20Image/)                                                                                                                                                                          | Cover image (16:9) — SVG · PNG 380×216 · PNG @3x (1140×648)                                                                     |
+| Contents                                                               | Document                                                                                                                                       |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| System architecture diagram (Mermaid + SVG/PNG)                        | [`docs/docs English version/system-architecture.md`](docs/docs%20English%20version/system-architecture.md)                                     |
+| Trust-boundary diagram (Mermaid + SVG/PNG)                             | [`docs/docs English version/trust-boundary.md`](docs/docs%20English%20version/trust-boundary.md)                                               |
+| **Result ↔ criterion ↔ source mapping** — the key competition document | [`docs/docs English version/assessment-criteria-source-mapping-en.md`](docs/docs%20English%20version/assessment-criteria-source-mapping-en.md) |
+| Data-source registry and grading criteria                              | [`docs/docs English version/data-sources-and-grading-en.md`](docs/docs%20English%20version/data-sources-and-grading-en.md)                     |
+| Question bank (41 questions) and per-session selection logic           | [`docs/docs English version/question-bank-and-selection-logic-en.md`](docs/docs%20English%20version/question-bank-and-selection-logic-en.md)   |
+| Technical approach and target population                               | [`docs/docs English version/technical-approach-en.md`](docs/docs%20English%20version/technical-approach-en.md)                                 |
+| CloudBase (production-phase design, not enabled)                       | [`docs/中文说明/cloudbase-integration.md`](docs/中文说明/cloudbase-integration.md)                                                                     |
+| Key design trade-offs and known limitations                            | [`docs/docs English version/design-tradeoffs.md`](docs/docs%20English%20version/design-tradeoffs.md)                                           |
+| Proof-of-usage screenshots (WorkBuddy AI conversation evidence)        | [`Proof of Workbuddy usage/`](Proof%20of%20Workbuddy%20usage/)                                                                                 |
+| Cover image (16:9) — SVG · PNG 380×216 · PNG @3x (1140×648)            | [`Cover Image/`](Cover%20Image/)                                                                                                               |
 
 ---
 
@@ -84,7 +80,6 @@ Judgements are made by a **deterministic rule engine** (auditable and reproducib
 | **Kaggle: Diabetes Health Indicators (CDC BRFSS 2015)** | **Feature reference** for high-risk profiles (not calibration)                                       |
 | **MIMIC‑III / PhysioNet**                               | ICU **feature reference** (not calibration)                                                          |
 | **Synthea**                                             | **Synthetic** patient test profiles                                                                  |
-
 
 > The only external host is `data.gov.sg` / `api.data.gov.sg` — public and keyless. The project contains **no API keys or secrets**.
 
@@ -143,6 +138,8 @@ Judgements are made by a **deterministic rule engine** (auditable and reproducib
 
 - ✅ **It is:** foot **screening** and **health education**, care-tier guidance, self-care tips.
 - ❌ **It is not:** a diagnostic device; it gives **no medication or dosage advice** and **does not replace** assessment or treatment by a qualified professional.
+
+
 - Outputs are **preliminary risk indicators only**, not a diagnosis. Seek **immediate medical care** if you notice any of: black/gangrenous tissue, rapidly spreading redness, foul-smelling pus, fever with a red swollen foot, or altered consciousness.
 - This is a **demo prototype**, not reviewed or approved by any regulator; a separate assessment is required before any clinical use.
 
