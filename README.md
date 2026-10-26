@@ -1,8 +1,7 @@
 # FootCheck — Diabetic Foot Check Assistant
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project name: FootCheck — Diabetic Foot Check Assistant  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Short blurb: Clear next-step foot screening for older adults with diabetes.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢 Clear next-step foot screening for older adults with diabetes.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟢 A foot screening and health-education tool for Singapore adults <ins>**aged 60+ with diagnosed type 1 or type 2 diabetes**</ins>, built for <ins>**seniors**</ins> and their <ins>**caregivers**</ins>, and <ins>**available in 5 languages**</ins>.
 
@@ -15,6 +14,8 @@
 **https://youtu.be/ztv1ns6s0TM**&nbsp;&nbsp;&nbsp;&nbsp;    (Please change the quality to 720p)
 
 Most diabetes-related amputations start with a wound that could have been caught earlier. FootCheck brings that check home.
+
+**https://drive.google.com/file/d/1BqKffD1kKnkd0rFmTpl7yDk_i5IwFguN/view?usp=share_link**&nbsp;&nbsp;    <- Demo Video 6mins30s
 
 ---
 
